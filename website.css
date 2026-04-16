@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;           
+  padding: 1rem 5%;            
+  background: rgba(10, 10, 20, 0.95); 
+  backdrop-filter: blur(10px);  
+  position: sticky;              
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: #7d2ae8;
+}
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px; 
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: white;
+  text-shadow: 0 0 10px #7d2ae8;
+}
+
+
+.btn-primary {
+  background: linear-gradient(45deg, #7d2ae8, #ff00c8);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(125, 42, 232, 0.4);
+}
+.card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(1, 0, 8, 0.6);
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+    width: 350px; 
+    height: auto;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+.planet-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #6200ea;
+}
+
+.badge {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: linear-gradient(45deg, #ff00cc, #3333ff);
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-weight: bold;
+  transform: rotate(10deg);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
